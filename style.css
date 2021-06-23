@@ -6,6 +6,16 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Muli', sans-serif;
+}
+
+body {
+    background-color: #21c08b;
+}
+
+p, li {
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .header {
@@ -13,21 +23,58 @@ html {
     height: 100px;
     background-color: #21c08b;
     display: flex;
+    justify-content: space-between;
 }
+
 
 .header__img {
     width: 200px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.header__menu {
+    margin-right: 10px;
     align-self: center;
 }
 
 .header__menu--profile {
     margin-right: 8px;
+    display: flex;
+}
+
+.header__menu--profile img {
+    height: 40px;
     width: 40px;
 }
 
-.header__menu--list {
+.header__menu--profile p {
+    align-self: center;
+    margin-left: 5px;
+}
+
+.header__menu ul {
+    display: none;
     list-style: none;
     position: absolute;
     width: 100px;
     text-align: right;
+    margin: 0 0 0 -10px;
+}
+
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+.header__menu li {
+    margin: 10px 0px;
+}
+
+.header__menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu li a:hover{
+    text-decoration: underline;
 }
