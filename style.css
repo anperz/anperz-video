@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #21c08b;
+    background-color: #6621c0;
 }
 
 p, li {
@@ -21,7 +21,7 @@ p, li {
 .header {
     width: 100%;
     height: 100px;
-    background-color: #21c08b;
+    background-color: #6621c0;
     display: flex;
     justify-content: space-between;
 }
@@ -34,13 +34,14 @@ p, li {
 }
 
 .header__menu {
-    margin-right: 10px;
+    margin-right: 20px;
     align-self: center;
 }
 
 .header__menu--profile {
     margin-right: 8px;
     display: flex;
+    color: white;
 }
 
 .header__menu--profile img {
